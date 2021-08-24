@@ -1,0 +1,46 @@
+.card {
+  width: 1000px;
+  height: 100%;
+  overflow: hidden;
+
+  position: relative;
+
+  &__child {
+    transition: all .5s;
+    display: flex;
+  }
+
+  &__body {
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 20px;
+
+    &-scale {
+      transform: scale(.5);
+      transition: transform .5s;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    color: gold;
+    text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    background-color: #fff;
+    box-shadow: -5px 5px 10px #333, -5px -5px 10px #333, 5px -5px 10px #333, 5px 5px 10px #333;
+  }
+
+  &__text {
+    text-align: start;
+    color: gold;
+    font-size: 20px;
+    margin-top: 10px;
+    text-shadow: -2px 2px 5px red, -2px -2px 5px red, 2px -2px 5px red, 2px 2px 5px red;
+  }
+}
